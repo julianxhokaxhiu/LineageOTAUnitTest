@@ -6,6 +6,7 @@ A CyanogenMod OTA Unit Test made for NodeJS
  - Clone this repo or [download it](https://github.com/julianxhokaxhiu/CyanogenModOTAUnitTest/archive/master.zip)
  - <code>cd</code> to the directory where you cloned this repo
  - <code>npm install</code>
+ - Open <code>node index.js</code> and edit the <code>OtaHost</code> variable with your url.
  - <code>node index.js</code>
  - Enjoy!
 
