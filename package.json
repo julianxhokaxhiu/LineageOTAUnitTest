@@ -3,6 +3,6 @@
     "author": "Julian Xhokaxhiu <info@julianxhokaxhiu.com>",
     "description": "A CyanogenMod OTA Client Unit",
     "dependencies": {
-        "unirest": "0.x.x"
+        "unirest": "*"
     }
 }
