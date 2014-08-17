@@ -35,14 +35,16 @@ var getCMList = function(){
     .send({
         'method' : 'get_all_builds',
         'params' : {
-            'device' : 'i9300',
+            'device' : 'hammerhead',
             'channels': [
                 'stable',
                 'snapshot',
                 'RC',
                 'nightly'
             ],
-            'source_incremental' : '68fb067fc8'
+            // Optional: use this to get always the newest zips based on the current one.
+            // If not used: will get all the zips.
+            //'source_incremental' : ''
         }
     })
     .end(function(response){
