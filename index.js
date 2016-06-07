@@ -30,7 +30,7 @@ var getCMList = function(){
     .headers({
         'Cache-control' : 'no-cache',
         'Content-type' : 'application/json',
-        'User-Agent' : 'com.cyanogenmod.updater/2.2'
+        'User-Agent' : 'com.cyanogenmod.updater/2.3'
     })
     .send({
         'method' : 'get_all_builds',
@@ -59,7 +59,7 @@ var getDeltaUpdate = function(){
     .headers({
         'Cache-control' : 'no-cache',
         'Content-type' : 'application/json',
-        'User-Agent' : 'com.cyanogenmod.updater/2.2'
+        'User-Agent' : 'com.cyanogenmod.updater/2.3'
     })
     .send({
         'source_incremental' : '68fb067fc8', // 31-gen-2014
