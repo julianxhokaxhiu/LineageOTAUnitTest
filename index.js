@@ -22,7 +22,7 @@
 
 */
 var unirest = require('unirest'),
-    OtaHost = 'http://beta.download.cyanogenmod.org'; // Place here you OTA Server Url
+    OtaHost = 'http://download.cyanogenmod.org'; // Place here you OTA Server Url
 
 var getCMList = function(){
     unirest
