@@ -1,7 +1,7 @@
 {
     "name": "CmOtaTest",
     "author": "Julian Xhokaxhiu <info@julianxhokaxhiu.com>",
-    "description": "A CyanogenMod OTA Client Unit",
+    "description": "A LineageOS OTA Client Unit",
     "dependencies": {
         "unirest": "*"
     }
