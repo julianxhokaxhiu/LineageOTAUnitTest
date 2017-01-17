@@ -22,7 +22,7 @@
 
 */
 var unirest = require('unirest'),
-    OtaHost = 'https://download.cyanogenmod.org'; // Place here you OTA Server Url
+    OtaHost = 'https://download.lineageos.org'; // Place here you OTA Server Url
 
 var getCMList = function(){
     unirest
@@ -52,7 +52,7 @@ var getCMList = function(){
     });
 }
 
-// Probably not working?
+// Provide a list of currently available Delta updates
 var getDeltaUpdate = function(){
     unirest
     .post(OtaHost + '/api/v1/build/get_delta')
@@ -70,8 +70,25 @@ var getDeltaUpdate = function(){
     });
 }
 
-// Is the list of all downloadable nightlies working?
-getCMList();
+// Provide a list of current LineageOS available updates
+var getLineageList = function(){
+    unirest
+    .post(OtaHost + '/api/v1/hammerhead/nightly') // optional: add /<incremental_hash> to get delta updates instead
+    .headers({
+        'Cache-control' : 'no-cache',
+        'Content-type' : 'application/json',
+        'User-Agent' : 'com.cyanogenmod.updater/3.0'
+    })
+    .end(function(response){
+        console.log( response.body );
+    });
+}
+
+// Is the list of all downloadable nightlies for CyanogenMod working?
+//getCMList();
 
 // Does it return a JSON Object with the delta link inside?
 //getDeltaUpdate();
+
+// Is the list of all downloadable nightlies for LineageOS working?
+getLineageList();
