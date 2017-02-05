@@ -73,7 +73,7 @@ var getDeltaUpdate = function(){
 // Provide a list of current LineageOS available updates
 var getLineageList = function(){
     unirest
-    .post(OtaHost + '/api/v1/hammerhead/nightly') // optional: add /<incremental_hash> to get delta updates instead
+    .post(OtaHost + '/api/v1/hammerhead/nightly/d387428a') // optional: add /<incremental_hash> to get delta updates instead
     .headers({
         'Cache-control' : 'no-cache',
         'Content-type' : 'application/json',
