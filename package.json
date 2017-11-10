@@ -1,8 +1,29 @@
 {
-    "name": "CmOtaTest",
-    "author": "Julian Xhokaxhiu <info@julianxhokaxhiu.com>",
-    "description": "A LineageOS OTA Client Unit",
-    "dependencies": {
-        "unirest": "*"
-    }
+  "name": "LineageOTAUnitTest",
+  "version": "0.0.1",
+  "description": "A LineageOS OTA Unit Test made for NodeJS",
+  "main": "index.js",
+  "dependencies": {
+    "unirest": "^0.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node tests/lineage.js",
+    "test:cm": "node tests/cm.js",
+    "test:cm:delta": "node tests/cm_delta.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julianxhokaxhiu/LineageOTAUnitTest.git"
+  },
+  "keywords": [
+    "lineageos",
+    "cyanogenmod"
+  ],
+  "author": "Julian Xhokaxhiu <info at julianxhokaxhiu dot com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/julianxhokaxhiu/LineageOTAUnitTest/issues"
+  },
+  "homepage": "https://github.com/julianxhokaxhiu/LineageOTAUnitTest#readme"
 }
