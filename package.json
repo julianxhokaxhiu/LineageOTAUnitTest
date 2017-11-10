@@ -8,9 +8,9 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "node tests/lineage.js",
-    "test:cm": "node tests/cm.js",
-    "test:cm:delta": "node tests/cm_delta.js"
+    "test": "nodejs tests/lineage.js",
+    "test:cm": "nodejs tests/cm.js",
+    "test:cm:delta": "nodejs tests/cm_delta.js"
   },
   "repository": {
     "type": "git",
