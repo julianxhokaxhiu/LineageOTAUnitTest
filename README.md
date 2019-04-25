@@ -1,8 +1,8 @@
-#LineageOSOTAUnitTest
+# LineageOSOTAUnitTest
 
 A LineageOS OTA Unit Test made for NodeJS
 
-##How to run
+## How to run
 
 > Feel free to edit the [`OtaHost`](https://github.com/julianxhokaxhiu/LineageOTAUnitTest/blob/master/tests/lineage.js#L2) URL, pointing it to your own OTA Server URL. By default it uses the LineageOS OTA Server.
 
