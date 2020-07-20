@@ -4,7 +4,7 @@ var unirest = require('unirest'),
 // Provide a list of current LineageOS available updates
 var getLineageList = function(){
     unirest
-    .get(OtaHost + '/api/v1/hammerhead/nightly/77433d9635') // optional: add /<incremental_hash> to get delta updates instead
+    .get(OtaHost + '/api/v1/sailfish/nightly/77433d9635') // optional: add /<incremental_hash> to get delta updates instead
     .headers({
         'Cache-control' : 'no-cache',
         'Content-type' : 'application/json',

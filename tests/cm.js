@@ -12,7 +12,7 @@ var getCMList = function(){
     .send({
         'method' : 'get_all_builds',
         'params' : {
-            'device' : 'hammerhead',
+            'device': 'sailfish',
             'channels': [
                 'stable',
                 'snapshot',
